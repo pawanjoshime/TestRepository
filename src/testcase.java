@@ -6,7 +6,10 @@ public class Main {
 		//stringToReverse("string reverse");	
 		//occuranceOfCharacter("occurance count", 'c');	
 		//occuranceOfString("oop java java", "java");
-		revereStringCase("WElcOMe jAvA");
+		//revereStringCase("WElcOMe jAvA");
+		//revereUsingStringBuilder("reverse");
+		//insertUsingStringBuilder("please in this string");
+		replaceUsingStringBuilder("please replace in this string");
  }
 	
 	public static void stringToReverse(String sOriginal)
@@ -68,6 +71,28 @@ public class Main {
 		}
 		
 		System.out.println("Reverse String case is =" + sTemp);  	
+	
+	}
+	
+	
+	public static void revereUsingStringBuilder(String sOriginal)
+	{
+		StringBuilder sBuilder = new StringBuilder(sOriginal);
+		System.out.println("Reverse of provided String =" + sBuilder.reverse());  	
+	
+	}
+	
+	public static void insertUsingStringBuilder(String sOriginal)
+	{
+		StringBuilder sBuilder = new StringBuilder(sOriginal);
+		System.out.println("Reverse of provided String =" + sBuilder.insert(7, "insert"));  	
+	
+	}
+	
+	public static void replaceUsingStringBuilder(String sOriginal)
+	{
+		StringBuilder sBuilder = new StringBuilder(sOriginal);
+		System.out.println("Reverse of provided String =" + sBuilder.replace(7, 15, "insert"));  	
 	
 	}
 	
